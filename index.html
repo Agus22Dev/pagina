@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ángulos en la circunferencia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <svg class="mascot" viewBox="0 0 120 120" aria-hidden="true">
+        <circle cx="60" cy="60" r="46" fill="#fff" stroke="#ff8fb1" stroke-width="6"/>
+        <circle cx="60" cy="60" r="3.5" fill="#b69cff"/>
+        <ellipse cx="44" cy="54" rx="5" ry="6.5" fill="#4a3553"/>
+        <ellipse cx="76" cy="54" rx="5" ry="6.5" fill="#4a3553"/>
+        <circle cx="46" cy="51.5" r="1.8" fill="#fff"/>
+        <circle cx="78" cy="51.5" r="1.8" fill="#fff"/>
+        <ellipse cx="36" cy="68" rx="7" ry="4" fill="#ffc2d4"/>
+        <ellipse cx="84" cy="68" rx="7" ry="4" fill="#ffc2d4"/>
+        <path d="M52 70 Q60 78 68 70" fill="none" stroke="#4a3553" stroke-width="3" stroke-linecap="round"/>
+        <path d="M104 18 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3z" fill="#ffd66b"/>
+        <path d="M14 92 l2 5 5 2 -5 2 -2 5 -2 -5 -5 -2 5 -2z" fill="#7fd8be"/>
+      </svg>
+      <div>
+        <p class="eyebrow">3° Medio · Guía de estudio</p>
+        <h1>Ángulos en la circunferencia</h1>
+        <p class="lead">Cada ángulo se calcula a partir de los <b>arcos que “mira”</b>. Repasa el resumen y después ponte a prueba ✨</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <button class="tab" role="tab" data-tab="resumen">📒 <span>Resumen</span></button>
+    <button class="tab" role="tab" data-tab="conceptuales">💭 <span>Conceptuales</span></button>
+    <button class="tab" role="tab" data-tab="aplicacion">🧮 <span>Aplicación</span></button>
+    <button class="tab" role="tab" data-tab="desarrollo">✏️ <span>Desarrollo</span></button>
+  </nav>
+
+  <main>
+    <!-- ============ RESUMEN ============ -->
+    <section id="resumen" class="panel">
+      <div class="callout big">
+        <span class="callout-emoji">💡</span>
+        <div>
+          <b>La idea que resume todo:</b> cada ángulo se calcula a partir de los arcos que “mira”.
+          Primero miras <b>dónde está el vértice</b>; eso decide la fórmula.
+        </div>
+      </div>
+
+      <h2 class="sec-title"><span>1</span> Conceptos básicos</h2>
+      <div class="grid cards-7">
+        <div class="mini-card"><span class="mc-emoji">🎯</span><h3>Centro (O)</h3><p>Punto a la misma distancia de todos los puntos de la circunferencia.</p></div>
+        <div class="mini-card"><span class="mc-emoji">📏</span><h3>Radio</h3><p>Segmento del centro a cualquier punto de la circunferencia.</p></div>
+        <div class="mini-card"><span class="mc-emoji">🎻</span><h3>Cuerda</h3><p>Segmento que une dos puntos de la circunferencia.</p></div>
+        <div class="mini-card"><span class="mc-emoji">↔️</span><h3>Diámetro</h3><p>Cuerda que pasa por el centro (mide 2 radios). Divide la circunferencia en dos arcos de 180°.</p></div>
+        <div class="mini-card"><span class="mc-emoji">✂️</span><h3>Secante</h3><p>Recta que corta la circunferencia en <b>dos</b> puntos.</p></div>
+        <div class="mini-card"><span class="mc-emoji">🫧</span><h3>Tangente</h3><p>Recta que toca la circunferencia en <b>un solo</b> punto.</p></div>
+        <div class="mini-card"><span class="mc-emoji">🌈</span><h3>Arco</h3><p>Pedazo de circunferencia entre dos puntos. Se mide en grados.</p></div>
+      </div>
+      <div class="callout mint">
+        <span class="callout-emoji">⭕</span>
+        <div><b>Dato clave:</b> la circunferencia completa mide <b>360°</b>. Todos los arcos juntos suman 360°, así puedes encontrar un arco que falta.</div>
+      </div>
+
+      <h2 class="sec-title"><span>2</span> ¿Qué fórmula uso?</h2>
+      <p class="note">Primero mira <b>dónde está el vértice</b>, después qué forman sus lados.</p>
+      <div class="table-wrap">
+        <table class="cute-table">
+          <thead><tr><th>¿Dónde está el vértice?</th><th>Lados</th><th>Tipo</th><th>Para recordar</th></tr></thead>
+          <tbody>
+            <tr><td>En el <b>centro</b></td><td>Dos radios</td><td><span class="pill p1">Del centro</span></td><td>Igual al arco</td></tr>
+            <tr><td><b>Sobre</b> la circunferencia</td><td>Dos cuerdas</td><td><span class="pill p2">Inscrito</span></td><td>Mitad del arco</td></tr>
+            <tr><td><b>Sobre</b> la circunferencia</td><td>Una cuerda y una tangente</td><td><span class="pill p3">Semi-inscrito</span></td><td>Mitad del arco</td></tr>
+            <tr><td><b>Dentro</b>, pero no en el centro</td><td>Dos cuerdas que se cruzan</td><td><span class="pill p4">Interior</span></td><td>Semisuma de arcos</td></tr>
+            <tr><td><b>Fuera</b> de la circunferencia</td><td>Secantes y/o tangentes</td><td><span class="pill p5">Exterior</span></td><td>Semidiferencia de arcos</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout yellow">
+        <span class="callout-emoji">🪄</span>
+        <div><b>Truco:</b> dentro → <b>se suma</b>, fuera → <b>se resta</b>. Mientras más lejos del centro está el vértice, más pequeño queda el ángulo comparado con el arco.</div>
+      </div>
+
+      <h2 class="sec-title"><span>3</span> Las 5 fórmulas</h2>
+      <p class="note">“Arco AB” es siempre el arco que queda <b>entre los lados del ángulo</b>.</p>
+      <div class="grid formulas">
+        <div class="f-card">
+          <div class="fig" data-fig="centro"></div>
+          <h3><span class="pill p1">Del centro</span></h3>
+          <p>Vértice en O, lados radios. Mide lo mismo que su arco.</p>
+          <div class="formula">∠AOB = arco AB</div>
+        </div>
+        <div class="f-card">
+          <div class="fig" data-fig="inscrito"></div>
+          <h3><span class="pill p2">Inscrito</span></h3>
+          <p>Vértice sobre la circunferencia, lados cuerdas. Mide la mitad del arco.</p>
+          <div class="formula">∠ACB = <span class="frac"><span>arco AB</span><span>2</span></span></div>
+        </div>
+        <div class="f-card">
+          <div class="fig" data-fig="semi"></div>
+          <h3><span class="pill p3">Semi-inscrito</span></h3>
+          <p>Una cuerda y una tangente que se juntan en la circunferencia. También la mitad del arco.</p>
+          <div class="formula">α = <span class="frac"><span>arco</span><span>2</span></span></div>
+        </div>
+        <div class="f-card">
+          <div class="fig" data-fig="interior"></div>
+          <h3><span class="pill p4">Interior</span></h3>
+          <p>Dos cuerdas se cruzan dentro. Semisuma del arco que “mira” (<i class="c1">rosa</i>) y del opuesto, al otro lado de la X (<i class="c2">lila</i>).</p>
+          <div class="formula">α = <span class="frac"><span>arco₁ + arco₂</span><span>2</span></span></div>
+        </div>
+        <div class="f-card">
+          <div class="fig" data-fig="exterior"></div>
+          <h3><span class="pill p5">Exterior</span></h3>
+          <p>Vértice fuera. Semidiferencia entre el arco lejano (<i class="c1">rosa</i>) y el cercano (<i class="c2">lila</i>). Sirve con 2 secantes, secante + tangente o 2 tangentes.</p>
+          <div class="formula">β = <span class="frac"><span>lejano − cercano</span><span>2</span></span></div>
+        </div>
+      </div>
+
+      <h2 class="sec-title"><span>4</span> Propiedades extra que salen seguido</h2>
+      <div class="grid props">
+        <div class="prop"><b>📐 Semicircunferencia = 90°</b><p>Si un lado del triángulo es diámetro, el ángulo opuesto es recto (subtiende un arco de 180°).</p></div>
+        <div class="prop"><b>👯 Mismo arco, mismo ángulo</b><p>Inscritos que miran el mismo arco son iguales, sin importar dónde esté el vértice.</p></div>
+        <div class="prop"><b>✌️ Central = doble del inscrito</b><p>Si un inscrito y uno del centro miran el mismo arco, el central mide el doble.</p></div>
+        <div class="prop"><b>⊥ Radio y tangente</b><p>El radio que llega al punto de tangencia forma 90° con la tangente.</p></div>
+        <div class="prop"><b>🎈 Dos tangentes desde P</b><p>PA = PB, y el ángulo en P más el ángulo del centro AOB suman 180°.</p></div>
+        <div class="prop"><b>🔷 Cuadrilátero inscrito</b><p>Los ángulos opuestos suman 180°.</p></div>
+        <div class="prop"><b>🔺 Triángulo</b><p>Sus ángulos suman 180°. Si dos lados son radios, es isósceles (dos ángulos iguales).</p></div>
+        <div class="prop"><b>🍰 Arcos en razón</b><p>Suma las partes y reparte 360°. Con 1:2:3 hay 6 partes de 60° → arcos 60°, 120° y 180°.</p></div>
+      </div>
+
+      <h2 class="sec-title"><span>5</span> Ejemplos resueltos</h2>
+      <div class="steps-banner">
+        <div><span>1</span>Identificar el tipo de ángulo</div>
+        <div><span>2</span>Escribir la fórmula</div>
+        <div><span>3</span>Reemplazar y despejar</div>
+      </div>
+      <div class="examples">
+        <details class="ex"><summary><span class="pill p2">A · Inscrito</span> Un inscrito abarca un arco de 140°. ¿Cuánto mide?</summary>
+          <ol><li>Vértice sobre la circunferencia y lados cuerdas → inscrito.</li><li>Ángulo = arco / 2</li><li>Ángulo = 140° / 2 = <b>70°</b></li></ol></details>
+        <details class="ex"><summary><span class="pill p1">B · Del centro al revés</span> Un inscrito mide 35°. ¿Cuánto mide el central que abarca el mismo arco?</summary>
+          <ol><li>El arco mide 35° · 2 = 70°.</li><li>El ángulo del centro es igual al arco → <b>70°</b>.</li></ol></details>
+        <details class="ex"><summary><span class="pill p4">C · Interior</span> Dos cuerdas se cruzan. Arco que abarca x: 161°; arco opuesto: 85°.</summary>
+          <ol><li>Vértice dentro, dos cuerdas → interior.</li><li>x = (arco₁ + arco₂) / 2</li><li>x = (161° + 85°) / 2 = 246° / 2 = <b>123°</b></li></ol></details>
+        <details class="ex"><summary><span class="pill p4">D · Interior, despejando</span> El interior mide 85° y un arco 130°. ¿Cuánto mide el otro arco α?</summary>
+          <ol><li>85° = (130° + α) / 2</li><li>Multiplico por 2: 170° = 130° + α</li><li>Resto 130°: <b>α = 40°</b></li></ol></details>
+        <details class="ex"><summary><span class="pill p5">E · Exterior</span> Dos secantes desde P. Arco lejano 138°, cercano 50°.</summary>
+          <ol><li>Vértice fuera → exterior.</li><li>δ = (lejano − cercano) / 2</li><li>δ = (138° − 50°) / 2 = 88° / 2 = <b>44°</b></li></ol></details>
+        <details class="ex"><summary><span class="pill p5">F · Dos tangentes</span> Desde P, tangentes en A y B. Arco menor AB = 110°. ¿Ángulo en P?</summary>
+          <ol><li>Arco mayor = 360° − 110° = 250°.</li><li>P = (250° − 110°) / 2 = 140° / 2 = <b>70°</b></li><li>Comprobación: ∠AOB = 110° y 110° + 70° = 180° ✔</li></ol></details>
+        <details class="ex"><summary><span class="pill p3">G · Semi-inscrito</span> Tangente en A y cuerda AB. El central AOB mide 124°.</summary>
+          <ol><li>Arco AB = 124° (igual al central).</li><li>Semi-inscrito = arco / 2 = 124° / 2 = <b>62°</b></li></ol></details>
+      </div>
+
+      <h2 class="sec-title"><span>6</span> Errores comunes 🙈</h2>
+      <ul class="oops">
+        <li>Confundir inscrito con del centro: el inscrito tiene el vértice <b>en el borde</b>, el del centro <b>en O</b>.</li>
+        <li>Olvidar dividir por 2 en inscrito, semi-inscrito, interior y exterior. <b>Solo el del centro no se divide.</b></li>
+        <li>Sumar en vez de restar en el exterior. Dentro suma, fuera resta.</li>
+        <li>Restar al revés en el exterior: siempre es <b>lejano menos cercano</b>, para que dé positivo.</li>
+        <li>Usar el arco equivocado en el interior: son el que mira el ángulo y el que está justo enfrente, no los de los costados.</li>
+        <li>No aprovechar que la circunferencia suma 360° cuando falta un arco.</li>
+      </ul>
+
+      <div class="callout lav">
+        <span class="callout-emoji">📝</span>
+        <div><b>Consejo:</b> dibuja tú la figura y escribe siempre <b>qué tipo de ángulo es</b> (la propiedad o teorema) antes de calcular.</div>
+      </div>
+
+      <div class="cta">
+        <p>¿Lista para practicar? 💪</p>
+        <button class="btn primary" data-go="conceptuales">Empezar con las conceptuales →</button>
+      </div>
+    </section>
+
+    <!-- ============ QUIZ PANELS ============ -->
+    <section id="conceptuales" class="panel" hidden>
+      <div class="quiz-head">
+        <div>
+          <h2>💭 Preguntas conceptuales</h2>
+          <p>Definiciones, tipos de ángulo y propiedades. Al responder verás la explicación.</p>
+        </div>
+        <div class="score-box">
+          <span class="score" data-score="conceptuales"></span>
+          <div class="bar"><i data-bar="conceptuales"></i></div>
+          <button class="btn ghost small" data-reset="conceptuales">↺ Reiniciar</button>
+        </div>
+      </div>
+      <div class="qlist" id="list-conceptuales"></div>
+    </section>
+
+    <section id="aplicacion" class="panel" hidden>
+      <div class="quiz-head">
+        <div>
+          <h2>🧮 Preguntas de aplicación</h2>
+          <p>Ejercicios con números. Si te equivocas, te decimos qué error cometiste y cómo se resuelve paso a paso.</p>
+        </div>
+        <div class="score-box">
+          <span class="score" data-score="aplicacion"></span>
+          <div class="bar"><i data-bar="aplicacion"></i></div>
+          <button class="btn ghost small" data-reset="aplicacion">↺ Reiniciar</button>
+        </div>
+      </div>
+      <div class="qlist" id="list-aplicacion"></div>
+    </section>
+
+    <section id="desarrollo" class="panel" hidden>
+      <div class="quiz-head">
+        <div>
+          <h2>✏️ Preguntas de desarrollo</h2>
+          <p>Resuelve en tu cuaderno (¡dibuja la figura!), escribe tus resultados y comprueba. Después verás el desarrollo completo.</p>
+        </div>
+        <div class="score-box">
+          <span class="score" data-score="desarrollo"></span>
+          <div class="bar"><i data-bar="desarrollo"></i></div>
+          <button class="btn ghost small" data-reset="desarrollo">↺ Reiniciar</button>
+        </div>
+      </div>
+      <div class="qlist" id="list-desarrollo"></div>
+      <h2 class="sec-title"><span>💬</span> Explícalo con tus palabras</h2>
+      <p class="note">Escribe tu respuesta y compárala con la respuesta modelo.</p>
+      <div class="qlist" id="list-abiertas"></div>
+    </section>
+  </main>
+
+  <footer>Hecho con 💖 para estudiar · Ángulos en la circunferencia</footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
